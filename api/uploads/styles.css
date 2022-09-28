@@ -28,13 +28,22 @@ body {
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
+.photos-container {
+  display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin-bottom: 5px
+}
+
 .inputs {
     column-count: 1;
     margin: 5px;
     padding: 5px;
 }
+
+.button,
 input::file-selector-button,
-.button {
+input::-webkit-file-upload-button {
     color: #1e9be9;
     margin: 10px auto 0 auto;
     background: #ecf0f3;
@@ -50,13 +59,15 @@ input::file-selector-button,
     transition: 0.5s;
     font-size: larger;
 }
+
 input::file-selector-button {
     font-size: large;
     width: 35%;
     margin-left: -5px;
 }
-input::file-selector-button:hover,
-.button:hover {
+
+.button:hover,
+input::file-selector-button:hover {
     box-shadow: none;
 }
 
