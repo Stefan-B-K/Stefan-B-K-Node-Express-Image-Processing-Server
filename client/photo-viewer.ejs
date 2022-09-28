@@ -1,15 +1,25 @@
 <html lang="en">
 <head>
       <title><%= title %></title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body style="display: flex">
 
-Resized 100 x 100 <br>
-<img src="photos/resized-<%= filename %>" alt="" style="margin: 10px auto"/> <br><br>
-Monochrome <br>
-<img src="photos/monochrome-<%= filename %>" alt="" style="margin: 10px auto" width="250"/><br><br>
-Original <br>
-<img src="photos/<%= filename %>" alt="" style="margin: 10px auto"/>
+<div class="photos">
+      <div class="container" style="display: flex; flex-direction: row; width: 400px; margin-bottom: 5px" >
+            <div><label>Resized <br> 100 x 100</label>
+                  <img src="photos/resized-<%= filename %>" alt="" style="margin: 10px auto"/>
+            </div>
+
+            <div><label>Monochrome </label><br>
+                  <img src="photos/monochrome-<%= filename %>" alt="" style="margin: 10px auto" width="250"/>
+            </div>
+      </div>
+      <br><br>
+      <div class="container" style="margin-top: 5px"><label>Original </label>
+            <img src="photos/<%= filename %>" alt="" style="margin: 10px auto" width="100%"/>
+      </div>
+</div>
 
 </body>
 </html>

@@ -1,11 +1,22 @@
 <html lang="en">
 <head>
-      <title>Photo Viewer</title>
+      <title>Image Processing Server</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<form method="post" action="/upload" enctype="multipart/form-data">
-      <input class="file-input" type="file" name="photo"/>
-      <input class="submit-button" type="submit" value="Submit"/>
-</form>
+<div class="container">
+      <form method="post" action="/upload" enctype="multipart/form-data">
+            <div class="inputs">
+                  <div class="project">
+                        <label >
+                              <input  type="file" name="photo" class="file input-file"/>
+                        </label>
+                  </div>
+                  <br>
+                  <div class="project"><input class="button" type="submit" value="Submit"/></div>
+            </div>
+      </form>
+</div>
 </body>
 </html>
+
