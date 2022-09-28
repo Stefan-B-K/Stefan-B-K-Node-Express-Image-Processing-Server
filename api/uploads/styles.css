@@ -22,7 +22,7 @@ body {
     width: 90vw;
     border-radius: 20px;
     margin: 40px auto 40px auto;
-    padding: 10px 15px 20px 15px;
+    padding: 20px 0;
     box-sizing: border-box;
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
@@ -39,16 +39,17 @@ body {
     column-count: 1;
     margin: 5px;
     padding: 5px;
+    width: 100%;
 }
 
 .button,
-input::file-selector-button{
+input::file-selector-button {
+    -webkit-appearance: none;
     color: #1e9be9;
-    margin: 10px auto 0 auto;
     background: #ecf0f3;
-    height: 40px;
+    height: 45px;
     width: 98%;
-    max-width: 350px;
+    max-width: 100%;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -56,30 +57,29 @@ input::file-selector-button{
     box-sizing: border-box;
     box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
     transition: 0.5s;
-    font-size: larger;
+    font-size: 200%;
 }
 
 input::file-selector-button {
-    font-size: large;
-    width: 35%;
+    font-size: 130%;
+    width: 40%;
     margin-left: -5px;
+    height: 50px;
 }
 
-.button:hover,
-input::file-selector-button:hover {
+.button:hover {
     box-shadow: none;
 }
 
 label {
     color: #1e9be9;
-    font-size: larger;
 }
 
 .project {
-    margin: 15px auto 0 auto;
+    margin: 15px auto;
     height: 55px;
     width: 100%;
-    max-width: 350px;
+    max-width: 90%;
     box-sizing: border-box;
     display: inline-block;
 }
@@ -91,7 +91,7 @@ label {
 
 .file {
     font-weight: 600;
-    font-size: medium;
+    font-size: 150%;
     color: #1e9be9;
     letter-spacing: 1px;
 }
@@ -100,43 +100,3 @@ label {
     flex-direction: column;
 }
 
-
-@media only screen and (max-width: 480px) {
-
-    .button,
-    input::file-selector-button{
-        font-size: large;
-    }
-
-    input::file-selector-button {
-        font-size: medium;
-    }
-
-    .file {
-        font-size: small;
-    }
-
-    label {
-        font-size: large;
-    }
-}
-
-@media only screen and (max-width: 415px) {
-    .button,
-    input::file-selector-button{
-        font-size: small;
-    }
-
-    input::file-selector-button {
-        font-size: small;
-    }
-
-    .file {
-        font-size: smaller;
-    }
-
-    label {
-        font-size: medium;
-    }
-
-}
