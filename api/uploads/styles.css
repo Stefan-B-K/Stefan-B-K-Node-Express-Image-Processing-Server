@@ -42,8 +42,7 @@ body {
 }
 
 .button,
-input::file-selector-button,
-input::-webkit-file-upload-button {
+input::file-selector-button{
     color: #1e9be9;
     margin: 10px auto 0 auto;
     background: #ecf0f3;
@@ -96,6 +95,48 @@ label {
     color: #1e9be9;
     letter-spacing: 1px;
 }
+
 .photos {
     flex-direction: column;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .button,
+    input::file-selector-button{
+        font-size: large;
+    }
+
+    input::file-selector-button {
+        font-size: medium;
+    }
+
+    .file {
+        font-size: small;
+    }
+
+    label {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .button,
+    input::file-selector-button{
+        font-size: small;
+    }
+
+    input::file-selector-button {
+        font-size: small;
+    }
+
+    .file {
+        font-size: smaller;
+    }
+
+    label {
+        font-size: medium;
+    }
+
 }
